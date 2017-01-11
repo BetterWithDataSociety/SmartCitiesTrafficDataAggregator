@@ -1,5 +1,7 @@
 package sstda
 
+import co.semweb.tda.*
+
 class BootStrap {
 
   def sysusers = [
