@@ -1,6 +1,8 @@
 package sstda
 
 import grails.plugin.springsecurity.annotation.Secured
+import grails.converters.JSON
+
 
 class TrafficController {
 
@@ -12,5 +14,7 @@ class TrafficController {
     else {
       log.debug("Handle non POST");
     }
+
+    render [ result:'OK' ] as JSON
   }
 }
