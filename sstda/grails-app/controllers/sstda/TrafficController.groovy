@@ -8,6 +8,9 @@ class TrafficController {
 
   @Secured(['ROLE_USER', 'IS_AUTHENTICATED_FULLY'])
   def index() { 
+
+    def result = [ result:'OK' ]
+
     if ( request.method == 'POST' ) {
       log.debug("Handle post");
     }
@@ -15,6 +18,6 @@ class TrafficController {
       log.debug("Handle non POST");
     }
 
-    render [ result:'OK' ] as JSON
+    render result as JSON
   }
 }
