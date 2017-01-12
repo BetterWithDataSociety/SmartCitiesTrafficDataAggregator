@@ -1,0 +1,12 @@
+[
+  {
+    "sensorId":"1",
+    "timestamp":"1484214178000",
+    "car":1,
+    "bus":0,
+    "commercial":0,
+    "cyclist":0,
+    "pedestrian":0,
+    "hgv":0
+  }
+]

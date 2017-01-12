@@ -1,0 +1,2 @@
+SensorId,Timestamp,car,bus,commercial,cyclist,pedestrian,hgv
+1,1484214178000,1,0,0,0,0,0
