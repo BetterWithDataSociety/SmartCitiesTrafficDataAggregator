@@ -50,4 +50,4 @@ if (Environment.isDevelopmentMode() && targetDir != null) {
 }
 else {
     root(ERROR, ['STDOUT'])
-
+}

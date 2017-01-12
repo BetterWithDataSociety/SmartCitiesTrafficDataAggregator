@@ -26,3 +26,14 @@ grails.plugin.springsecurity.filterChain.chainMap = [
 	[pattern: '/**',             filters: 'JOINED_FILTERS']
 ]
 
+// The following 2 entries make the app use basic auth by default
+grails.plugin.springsecurity.useBasicAuth = true
+grails.plugin.springsecurity.basic.realmName = "iot"
+
+
+// grails.plugin.springsecurity.filterChain.chainMap = [
+grails.plugin.springsecurity.filterChain.buildFilterChain = [
+  '/api/**': 'JOINED_FILTERS,-exceptionTranslationFilter',
+  '/**': 'JOINED_FILTERS,-basicAuthenticationFilter,-basicExceptionTranslationFilter'
+]
+
