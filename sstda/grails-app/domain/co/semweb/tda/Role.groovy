@@ -16,6 +16,7 @@ class Role implements Serializable {
 	}
 
 	static mapping = {
+                table 'iot_role'
 		cache true
 	}
 }

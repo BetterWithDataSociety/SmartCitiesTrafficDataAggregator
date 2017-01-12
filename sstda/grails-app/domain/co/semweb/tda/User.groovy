@@ -44,6 +44,7 @@ class User implements Serializable {
 	}
 
 	static mapping = {
+                table 'iot_user'
 		password column: '`password`'
 	}
 }

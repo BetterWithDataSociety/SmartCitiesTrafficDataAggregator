@@ -76,7 +76,9 @@ class UserRole implements Serializable {
 	}
 
 	static mapping = {
+                table 'iot_user_role'
 		id composite: ['user', 'role']
 		version false
 	}
+
 }
